@@ -62,7 +62,21 @@
                   </Group>
                   <Component id="txtPantalla" alignment="0" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="0" pref="15" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" attributes="0">
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="BtnInformación" max="32767" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="32767" attributes="0"/>
+                  </Group>
+              </Group>
           </Group>
       </Group>
     </DimensionLayout>
@@ -70,26 +84,36 @@
       <Group type="103" groupAlignment="0" attributes="0">
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="txtPantalla" min="-2" pref="59" max="-2" attributes="0"/>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BtnNumerador" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnDenominador" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnSalir" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BtnSuma" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnResta" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnInverso" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnLimpiar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="BtnMultiplicacion" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnDivision" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnValor" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
-                  <Component id="BtnIgual" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="txtPantalla" min="-2" pref="59" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BtnNumerador" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnDenominador" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnSalir" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BtnSuma" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnResta" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnInverso" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnLimpiar" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="BtnMultiplicacion" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnDivision" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnValor" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="BtnIgual" alignment="3" min="-2" pref="31" max="-2" attributes="0"/>
+                          <Component id="jLabel2" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="BtnInformación" min="-2" pref="32" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  </Group>
               </Group>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
@@ -231,6 +255,24 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtPantallaActionPerformed"/>
       </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="BtnInformaci&#xf3;n">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Informaci&#xf3;n"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="BtnInformaci&#xf3;nActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Modificacion usando Git"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Version 1.0.1.0.000"/>
+      </Properties>
     </Component>
   </SubComponents>
 </Form>
