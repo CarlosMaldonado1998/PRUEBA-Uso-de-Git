@@ -38,7 +38,7 @@ public class WinFraccion extends javax.swing.JFrame {
         setTitle("Calculadora de Fracciones");
         setBackground(new java.awt.Color(204, 255, 153));
 
-        BtnNumerador.setBackground(new java.awt.Color(0, 102, 255));
+        BtnNumerador.setBackground(new java.awt.Color(0, 153, 153));
         BtnNumerador.setText("Numerador");
         BtnNumerador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -46,7 +46,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnDenominador.setBackground(new java.awt.Color(0, 102, 255));
+        BtnDenominador.setBackground(new java.awt.Color(0, 153, 153));
         BtnDenominador.setText("Denominador");
         BtnDenominador.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -54,7 +54,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnResta.setBackground(new java.awt.Color(0, 102, 255));
+        BtnResta.setBackground(new java.awt.Color(0, 153, 153));
         BtnResta.setText("-");
         BtnResta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +62,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnDivision.setBackground(new java.awt.Color(0, 102, 255));
+        BtnDivision.setBackground(new java.awt.Color(0, 153, 153));
         BtnDivision.setText("/");
         BtnDivision.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -70,7 +70,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnSuma.setBackground(new java.awt.Color(0, 102, 255));
+        BtnSuma.setBackground(new java.awt.Color(0, 153, 153));
         BtnSuma.setText("+");
         BtnSuma.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -78,7 +78,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnMultiplicacion.setBackground(new java.awt.Color(0, 102, 255));
+        BtnMultiplicacion.setBackground(new java.awt.Color(0, 153, 153));
         BtnMultiplicacion.setText("*");
         BtnMultiplicacion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -86,7 +86,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnSalir.setBackground(new java.awt.Color(0, 102, 255));
+        BtnSalir.setBackground(new java.awt.Color(0, 153, 153));
         BtnSalir.setText("SALIR");
         BtnSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -94,7 +94,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnLimpiar.setBackground(new java.awt.Color(0, 102, 255));
+        BtnLimpiar.setBackground(new java.awt.Color(0, 153, 153));
         BtnLimpiar.setText("LIMPIAR");
         BtnLimpiar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -102,7 +102,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnIgual.setBackground(new java.awt.Color(0, 102, 255));
+        BtnIgual.setBackground(new java.awt.Color(0, 153, 153));
         BtnIgual.setText("=");
         BtnIgual.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -110,7 +110,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnInverso.setBackground(new java.awt.Color(0, 102, 255));
+        BtnInverso.setBackground(new java.awt.Color(0, 153, 153));
         BtnInverso.setText("1 / n");
         BtnInverso.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,7 +118,7 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
-        BtnValor.setBackground(new java.awt.Color(0, 102, 255));
+        BtnValor.setBackground(new java.awt.Color(0, 153, 153));
         BtnValor.setText("VALOR");
         BtnValor.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -135,12 +135,16 @@ public class WinFraccion extends javax.swing.JFrame {
             }
         });
 
+        BtnInformación.setForeground(new java.awt.Color(0, 51, 153));
         BtnInformación.setText("Información");
         BtnInformación.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 BtnInformaciónActionPerformed(evt);
             }
         });
+
+        jMenuBar1.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        jMenuBar1.setForeground(new java.awt.Color(255, 0, 0));
 
         jMenu1.setText("About");
 
@@ -217,7 +221,7 @@ public class WinFraccion extends javax.swing.JFrame {
                             .addComponent(BtnValor, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(BtnIgual, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)))
                     .addComponent(BtnInformación, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(38, Short.MAX_VALUE))
+                .addContainerGap(36, Short.MAX_VALUE))
         );
 
         pack();
