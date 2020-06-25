@@ -58,7 +58,8 @@ public class ClsFraccion {
             }
         }
     }
-    
+   
+    //PERMITE VER LOS RESULTADOS DE LAS OPERACIONES EN PANTALLA 
     public String ver(){
         String ver = "Indeterminacion (LIMPIE y vuelva a intentar)";
             if (_denominador != 0){
@@ -71,13 +72,18 @@ public class ClsFraccion {
             }
         return ver;
     }
+ 
+//FUNCION DE SIGNO
     public void masmenos(){
         _numerador = -_numerador;
     }
+//TRANSFORMAR EL VALOR A ENTERO O DECIMAL 
     public double Valor(){
         double Valor = (double)_numerador / _denominador;
         return Valor;
     }
+    
+//OPERACIONES QUE SE PUEDEN REALIZAR EN LAS FRACCIONES 
     public ClsFraccion suma(ClsFraccion nuevo){
         ClsFraccion resp;
         resp = new ClsFraccion();
@@ -99,6 +105,7 @@ public class ClsFraccion {
         resp._denominador = _denominador * nuevo._denominador;
         return resp;
     }
+   
     public ClsFraccion division(ClsFraccion nuevo){
         ClsFraccion resp;
         resp = new ClsFraccion();
